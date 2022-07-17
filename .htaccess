@@ -1,0 +1,7 @@
+#error document
+ErrorDocument 404 localhost/ptv/404.html
+
+#rewrite
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^category/(.*)$ ./category.php

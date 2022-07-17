@@ -1,0 +1,303 @@
+:root{
+    --primary-color:#cd0000;
+    --secondary-color:#8b0;
+    --medium-color:#eac117;
+    --dark-color:#000;
+    --light-color:#fff;
+    --sports-color:#fdd017;
+    --tech-color:#8b008b;
+    --poli-color:var(--secondary-color);
+    --Life-color:forestgreen;
+    --ente-color:var(--primary-color);
+    --busi-color: #222;
+    --food-color:orangered;
+    --cars-color:orange;
+    --fash-color:#b2c248;
+}
+/* normalize css */
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+a:hover{
+    text-decoration: none !important;
+    color: #336699;
+}
+html, body{
+    height: 100%;
+}
+aside, header, div, footer, section{
+    display: block;
+}
+
+/* ================================
+************ Util classes *********
+================================= */
+
+/* color classes */
+.prim-color{
+    color:var(--primary-color);
+}
+.sec-color{
+    color:var(--secondary-color);
+}
+.medium-color{
+    color:var(--medium-color);
+}
+.dark-color{
+    color: var(--dark-color);
+}
+.sport-color{
+    color: var(--sports-color);
+}
+.poli-color{
+    color: var(--poli-color);
+}
+.busi-color{
+    color: var(--busi-color);
+}
+.fash-color{
+    color: var(--fash-color);
+}
+.cars-color{
+    color: var(--cars-color);
+}
+
+/* background color classes*/
+.bg-spor{
+    background-color:var(--sports-color);
+    color: #fff; 
+}
+.bg-poli{
+    background-color:var(--poli-color);
+    color: #fff;
+}
+.bg-tech{ 
+    background-color:var(--tech-color);
+    color: #fff; 
+}
+.bg-ente{ 
+    background-color: var(--ente-color);
+    color: #fff;
+}
+.bg-life{ 
+    background-color:var(--Life-color);
+    color: #fff;
+}
+.bg-busi{ 
+    background-color:var(--busi-color);
+    color: #fff;
+}
+.bg-food{ 
+    background-color:var(--food-color);
+    color: #fff;
+}
+.bg-cars{ 
+    background-color:var(--cars-color);
+    color: #fff;
+}
+.bg-fash{ 
+    background-color:var(--fash-color);
+    color: #fff;
+}
+.bg-sec{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.bg-medium{
+    background-color: var(--medium-color);
+    color: #fff;
+}
+.bg-black-2{
+    background: #333;
+    color: #fff;
+}
+.white-bg{
+    background: #fff;
+    color: #000;
+}
+.divider{
+    border: 1px solid #ccc;
+}
+/* btn classes */
+.btn{
+    transition: all .5s;
+}
+.btn-ente{
+    background: var(--ente-color);
+    color: #fff;
+    opacity: 0.7;
+}
+.btn-ente:hover,
+.btn-ente:focus{
+    opacity: 1;
+    color: #fff;
+    outline: none;
+}
+.act{
+    color: #cd0000;
+}
+.current{
+    background: var(--primary-color);
+    color: white !important;
+}
+.pagination .page-link{
+    color: red;    
+}
+
+/* ==================================================
+================ Menu  Styles***--===================
+=====================================================*/
+#menu{
+    border-bottom: 1px solid #000;
+}
+#menu .nav-link{
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#menu .nav-link:hover,
+#menu .nav-link:focus{
+    background-color: #ccc;
+    color: var(--primary-color);
+}
+
+/* ==================================================
+================ Header  Styles***--=================
+====================================================*/
+
+.fancyHeader{
+    background: url('../../images/header/header.JPG') no-repeat center center/cover;
+}
+/* main header */
+#main-header{
+    background: url('../../images/header/header-bg.JPG') no-repeat center center/cover;
+    height: 60vh;
+    top: 0;
+}
+#header-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+#header-content{
+    width: 50%;
+    border: 4px solid var(--medium-color);
+    padding: 20px;
+    transform: translateY(70%);
+}
+
+/* ==================================================
+================ Article Styles***--==================
+=====================================================*/
+
+.singlepost-title{
+    display: block;
+    margin: 15px auto;
+}
+.post-link{
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+.post-link:hover{
+    text-decoration: none;
+    color: #cd0000;
+    opacity: 1;
+}
+.post-ref{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 100;
+    color: #666;
+}
+
+
+/* ==================================================
+================ Sidebar  Styles***--================
+====================================================*/
+
+#side-content .cat-title{
+    border-top: 1px solid #ccc;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+}
+#side-content ul li:hover,
+#side-content ul li:focus{
+    background: #f2f2f2;
+    color: var(--primary-color);
+}
+#side-content ul li a{
+    color: inherit;
+}
+
+
+/* ==================================================
+================ Back-2-top btn Style***--===========
+====================================================*/
+.top #topBtn{
+    position: fixed;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #ffa500;
+    color: #000014;
+    text-align: center;
+    height: 33px;
+    width: 33px;
+    line-height: 33px;
+    bottom: 30px;
+    right: 30px;
+}
+.top #topBtn:hover{
+    background: orangered;
+    color: #f8f8ff;
+}
+/* ==================================================
+================ Footer Styles***--==================
+=====================================================*/
+#main-footer a{
+    color: #f2f2f2;
+    opacity: 0.6;
+    line-height: 1.5;
+    margin: 5px;
+}
+#main-footer a:hover{
+    color: var(--secondary-color);
+    opacity: 1;
+}
+#main-footer h4{
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+/* ==================================================
+=========== Responsive Styles***--===================
+=====================================================*/
+
+@media screen and (max-width:800px){
+	#header-content{
+		width: 80%;
+		margin-top: 10%;
+    }
+    #main-footer #footer-content > div{
+        border-bottom: 1px dashed #ccc;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:540px){
+    #menu ul{
+        text-align: center;
+    }
+} 
